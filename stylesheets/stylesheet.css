@@ -73,6 +73,7 @@ a {
     padding: 2rem 1rem; } }
 
 .project-name {
+  color : #F5F5DC;
   font-family: 'Caveat', cursive;
   margin-top: 0;
   margin-bottom: 0.1rem;
@@ -91,6 +92,7 @@ a {
     font-size: 7rem; } }
 
 .project-tagline {
+  color : #F5F5DC;
   margin-bottom: 2rem;
   font-weight: normal;
   opacity: 0.7; }
@@ -120,7 +122,7 @@ a {
   font-weight: normal;
   color: #9AB129; }
 .main-content p {
-  color : rgba(255,255,255,.8);
+  color : #F5F5DC;
   margin-bottom: 1em; }
 .main-content code {
   padding: 2px 4px;
@@ -232,14 +234,15 @@ a {
 .site-footer {
   padding-top: 2rem;
   margin-top: 2rem;
-  border-top: solid 1px #eff0f1; }
+  border-top: solid 1px #F5F5DC; }
 
 .site-footer-owner {
   display: block;
   font-weight: bold; }
 
 .site-footer-credits {
-  color: #819198; }
+  color: #F5F5DC;
+}
 
 @media screen and (min-width: 64em) {
   .site-footer {
