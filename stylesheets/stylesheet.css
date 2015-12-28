@@ -62,6 +62,8 @@ a {
 
 @media screen and (min-width: 64em) {
   .page-header {
+    max-width : 64rem;
+    margin    : 0 auto;
     padding: 5rem 6rem; } }
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
@@ -214,6 +216,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .main-content {
+    background-color: #382110;
     max-width: 64rem;
     padding: 2rem 6rem;
     margin: 0 auto;
