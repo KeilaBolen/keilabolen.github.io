@@ -59,10 +59,10 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: rgba(255,255,255,.3);
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  background-color: rgba(255,255,255,0);
+  border: .05rem solid rgba(255,255,255,.3);
 }
 
 
@@ -163,22 +163,25 @@ body {
   padding: 0 1.5rem;
 }
 .cover-heading {
-  font-size : 12rem;
+  color : rgba(242,242,242,.9);
   font-family: 'Caveat', cursive;
-  margin-bottom : 0px;
+
   padding-bottom : 0px;
 }
 .cover .btn-lg {
   margin-top : 2.22rem;
   padding: .33rem .66rem;
   font-weight: normal;
-  opacity : 0.7;
+  color : rgba(255,255,255,.3);
+  border : 2px rgba(255,255,255,.3) solid;
+  backround-color: rgba(255,255,255,0);
 }
 
 /*
  * Tagline
  */
 .tagline {
+  color : rgba(255,255,255,.7);
   margin-top : -20px;
   padding-top : 0;
 }
@@ -199,8 +202,8 @@ body {
 @media (min-width: 40em) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
-    top: 0;
+    /*position: fixed;
+    top: 0;*/
   }
   .mastfoot {
     position: fixed;
@@ -273,6 +276,7 @@ body {
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="/js/jquery.fittext.js"></script>
     <script  style="display:none">/*!
  * Bootstrap v4.0.0-alpha.2 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -302,6 +306,9 @@ DATA_TOGGLE:'[data-toggle="tab"], [data-toggle="pill"]',DROPDOWN_TOGGLE:".dropdo
     )
     document.head.appendChild(msViewportStyle)
   }
+
+  jQuery(".tagline").fitText(3.3);
+  jQuery(".cover-heading").fitText(.4);
 
 })();
 </script>
