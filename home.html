@@ -25,88 +25,95 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png?v=WGGdM6okLy">
     <meta name="theme-color" content="#262626">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" integrity="sha384-mMG3CP9nPLZ1JW4y6ikjxNX15A0nEt+JQkm/LL6QtYxyXdUV6HG530PFmcJw7cpU" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"<></script>
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js" integrity="sha384-3ArYxhJWn9gHczBA3odi4jNRkXeaz+NL175Z8dlM2MlX07U3xg+E/d/Q2RpArfgN" crossorigin="anonymous"></script>
+    <script src="https://use.fonticons.com/e3dd99c3.js"></script>
     <style type="text/css">
-      html, body {
-        background-color : #966f3f !important;
-      }
+    html {
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color : rgba(242,242,242,.9);
+      background-color: rgba(0,0,0,.5);
+      padding : 0;
+      margin : 0;
+    }
 
-      section {
-        margin    : 23px auto !important;
-        max-width : 95% !important;
-      }
+    body {
+      padding : 0;
+      margin : 0;
+    }
 
-      .page-header {
-        background-color : #966f3f !important;
-        background-image      :  url('assets/tree.jpg');
-        background-position   : top;
-        background-attachment : fixed;
-        background-repeat     : no-repeat;
-        background-size       : cover;
-      }
+    footer {
 
-      button.list-group-item {
-        background-color : rgba(150,111,63,.5);
-        color : rgba(254,254,220,1);
-        text-align: center;
-      }
+    }
 
-      footer.site-footer {
-        text-align: center;
-      }
+    a, a:hover, a:visited, a:active {
+      font-size : 18px;
+      color: rgba(70,70,70,1);
+    }
+
+    #main-wrapper {
+      min-height : 1000px;
+      background-image    : url('/assets/images/home-bg.jpg');
+      background-size     : cover;
+      background-repeat   : no-repeat;
+
+    }
+
+    #top-menu {
+      background-color : rgba(13,13,13,1);
+      height : 100px;
+      position : relative;
+      display : block;
+    }
+
+    #branding-image {
+      margin : 10px 0 0 10px;
+      height : 80px;
+      position: absolute;
+      z-index : 0;
+      float: left;
+    }
+
+    #social {
+      width: 100%;
+      text-align: right;
+      margin-left : -50px;
+      margin-top: 10px;
+      list-style-type: none;
+      position: absolute;
+      z-index: 1;
+    }
+
+    #social li {
+      display : inline-block;
+    }
+
+    #social li img {
+      width : 18px;
+    }
+
     </style>
   </head>
   <body>
-    <div class="container-fluid">
-    <section class="page-header">
-      <h1 class="project-name">Keila.me</h1>
-      <h2 class="project-tagline">The personal website of Keila Marie Bolen</h2>
+    <section id="top-menu">
+      <ul id="social">
+        <li><a href="https://artofnaturephotography.wordpress.com" target="_blank"><img src="assets/images/wordpress.png" /></a></li>
+        <li><a href="https://twitter.com/KeilaBolen" target="_blank"><i class="icon icon-twitter"></i></a></li>
+        <li><a href="https://plus.google.com/116279744737557547843" target="_blank"><i class="icon icon-google-plus"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/keila-bolen-3142a3100" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+        <li><a href="mailto:keila.bolen@gmail.com"><i class="icon icon-envelope"></i></a></li>
+      </ul>
+      <img id="branding-image" src="/branding-image.svg" />
     </section>
-
-    <section class="main-content">
-      <div class="row">
-    <div class="col-sm-2">
-      <div class="list-group">
-        <button type="button" class="list-group-item">Home</button>
-        <a class="list-group-item" href="/resume/">View Resume</a>
-        <a class="list-group-item" href="downloads/resume.docx">Download Resume (.docx)</a>
-        <button type="button" class="list-group-item">Portfolio</button>
-        <a class="list-group-item" href="/photography/">Photography</a>
-        <button type="button" class="list-group-item">Social</button>
-      </div>
-    </div>
-    <div class="col-sm-10">
-      <h3>
-<a id="welcome" class="anchor" href="#welcome" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome!</h3>
-
-<h3>
-<a id="special-thanks" class="anchor" href="#special-thanks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Special Thanks</h3>
-
-<p>Special thanks to my husband, <a href="https://github.com/micahbolen" class="user-mention">@micahbolen</a> for his love and support.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having a question for or want to get in touch with Keila?  Contact her <a href="mailto:keila.bolen@gmail.com">via email</a> or on <a href="https://www.linkedin.com/pub/keila-bolen/100/2a3/314">LinkedIn</a> and she will respond as quickly as possible.</p>
-
-    </div>
-  </div>
-
-
-      <footer class="site-footer">
-
-        <span class="site-footer-credits">&copy; 2015 Keila Marie Bolen</span>
+    <div id="main-wrapper">
+      <section id="main">
+        <section id="left-menu">
+        </section>
+        <section id="content">
+        </section>
+      </section>
+      <footer>
       </footer>
-
-    </section>
-
-
+    </div>
   </body>
 </html>
