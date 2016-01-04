@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#262626">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
-    <script src="https://use.fonticons.com/e3dd99c3.js"></script>
+    <link href="/assets/fonts/genericons/genericons.css" rel="stylesheet" type="text/css">
     <style type="text/css">
     html {
       font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -49,6 +49,46 @@
     a, a:hover, a:visited, a:active {
       font-size : 18px;
       color: rgba(70,70,70,1);
+    }
+
+    .wordpress-icon:before {
+    	content: '\f205';
+    	font: normal 18px/1 'Genericons';
+    	display: inline-block;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    }
+
+    .twitter-icon:before {
+    	content: '\f202';
+    	font: normal 18px/1 'Genericons';
+    	display: inline-block;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    }
+
+    .google-plus-icon:before {
+    	content: '\f206';
+    	font: normal 18px/1 'Genericons';
+    	display: inline-block;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    }
+
+    .linkedin-icon:before {
+    	content: '\f208';
+    	font: normal 18px/1 'Genericons';
+    	display: inline-block;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
+    }
+
+    .envelope-icon:before {
+    	content: '\f410';
+    	font: normal 18px/1 'Genericons';
+    	display: inline-block;
+    	-webkit-font-smoothing: antialiased;
+    	-moz-osx-font-smoothing: grayscale;
     }
 
     #main-wrapper {
@@ -97,11 +137,11 @@
   <body>
     <section id="top-menu">
       <ul id="social">
-        <li><a href="https://artofnaturephotography.wordpress.com" target="_blank"><img src="assets/images/wordpress.png" /></a></li>
-        <li><a href="https://twitter.com/KeilaBolen" target="_blank"><i class="icon icon-twitter"></i></a></li>
-        <li><a href="https://plus.google.com/116279744737557547843" target="_blank"><i class="icon icon-google-plus"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/keila-bolen-3142a3100" target="_blank"><i class="icon icon-linkedin"></i></a></li>
-        <li><a href="mailto:keila.bolen@gmail.com"><i class="icon icon-envelope"></i></a></li>
+        <li><a href="https://artofnaturephotography.wordpress.com" target="_blank"><span class="genericon wordpress-icon"></span></a></li>
+        <li><a href="https://twitter.com/KeilaBolen" target="_blank"><span class="genericon twitter-icon"></span></a></li>
+        <li><a href="https://plus.google.com/116279744737557547843" target="_blank"><span class="genericon google-plus-icon"></span></a></li>
+        <li><a href="https://www.linkedin.com/in/keila-bolen-3142a3100" target="_blank"><span class="genericon linkedin-icon"></span></a></li>
+        <li><a href="mailto:keila.bolen@gmail.com"><span class="genericon envelope-icon"></span></a></li>
       </ul>
       <img id="branding-image" src="/branding-image.svg" />
     </section>
