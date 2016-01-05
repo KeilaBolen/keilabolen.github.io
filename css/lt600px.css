@@ -1,7 +1,21 @@
-.panel {
-  border : none;
-  box-shadow : none;
+.row {
+  position     : relative;
+  display      : block;
+  width        : 95%;
+  margin       : 0px auto;
+  padding      : 10px 0 10px 0;
+  height       : 555px;
 }
+
+.panel {
+   height : 100%;
+   overflow : hidden;
+   font-size : 12px;
+   display : block;
+   background : rgba(0,0,0,.77);
+   border : 1px dotted rgba(0,0,0,0);
+   box-shadow : 0 0 0 5px rgba(0,0,0,.77);
+ }
 
 .left-25 {
  height       : 555px;
@@ -38,9 +52,29 @@
 
 .sidebar li a {
   text-decoration: none;
-  font-size : 13px;
+  font-size : 12px;
+}
+
+#main-wrapper {
+  padding-top : 5px;
 }
 
 #content {
   padding : 0 5px 0 5px;
+}
+
+#content p {
+  font-size : 12px;
+}
+
+#content p a {
+  font-size: 12px;
+}
+
+#content h1 {
+  font-size : 18px;
+}
+
+#content h2 {
+  font-size: 16px;
 }
