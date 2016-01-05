@@ -48,7 +48,11 @@
 
     a, a:hover, a:visited, a:active {
       font-size : 18px;
-      color: rgba(70,70,70,1);
+      color: rgba(140,140,140,1);
+    }
+
+    a:hover {
+      color : rgba(255,255,255,1);
     }
 
     .wordpress-icon:before {
@@ -91,12 +95,80 @@
     	-moz-osx-font-smoothing: grayscale;
     }
 
+    .row {
+      position     : relative;
+      display      : block;
+      width        : 90%;
+      margin       : 0px auto;
+      padding      : 20px 0 20px 0;
+      height       : 555px;
+    }
+
+    .panel {
+       height : 100%;
+       overflow : hidden;
+       font-size : 12px;
+       display : block;
+       background : rgba(0,0,0,.77);
+       border : 4px dotted rgba(0,0,0,0);
+       box-shadow : 0 0 0 15px rgba(0,0,0,.77);
+     }
+
+     .center-100 {
+      margin : 0 auto;
+      width  : 100%;
+      display : block;
+     }
+
+     .left-25 {
+       height : calc(555px + 20%);
+       overflow : hidden;
+      display : inline-block;
+      float : left;
+      width   : 16%;
+      padding-left : 0;
+      margin-right  : 1%;
+      text-align: center;
+     }
+
+     .right-75 {
+       height : 555px;
+       overflow : hidden;
+      display : inline-block;
+      width   : 48%;
+      padding : 10% 10% 0 10%;
+      float : right;
+     }
+
+     .center {
+       text-align: center;
+     }
+
+     .sidebar {
+       list-style-type : none;
+       margin-top : 40px;
+       margin-left : 0;
+       padding-left: 0;
+     }
+
+     .sidebar li {
+       margin : 0 0 20px 0;
+       padding : 0 0 20px 0;
+     }
+
+     .sidebar li a {
+       text-decoration: none;
+       font-size : 12px;
+       font-weight: 900;
+     }
+
     #main-wrapper {
       min-height : 1000px;
       background-image    : url('/assets/images/home-bg.jpg');
       background-size     : cover;
       background-repeat   : no-repeat;
-
+      padding-top : 20px;
+      margin : 0 auto;
     }
 
     #top-menu {
@@ -146,12 +218,61 @@
       <img id="branding-image" src="/branding-image.svg" />
     </section>
     <div id="main-wrapper">
-      <section id="main">
-        <section id="left-menu">
-        </section>
-        <section id="content">
-        </section>
-      </section>
+      <div class="row">
+        <div class="panel left-25">
+          <ul class="sidebar">
+            <li>
+              <a href="#" target="_blank">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+              About Me
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+              Resume
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+            Portfolio
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+            Photography
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+              Art
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+              Writing
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="panel right-75">
+          <h1 class="center">Welcome!</h1>
+          <h2>Special Thanks</h2>
+          <p>
+            A big thank you to my  husband,  @micahbolen  (Micah.tech)  for
+            his  love and support.  Without him, none of this would be possible.
+          </p>
+          <h2>Contact Me</h2>
+          <p>
+            Have a question or want  to get in touch with me? Feel free to send
+            me an email, or reach out though the social media links above.​
+          </p>
+          </div>
+        </div>
+      </div>
       <footer>
       </footer>
     </div>
