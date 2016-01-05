@@ -93,7 +93,6 @@
     }
 
     .panel {
-       height : 100%;
        overflow : hidden;
        font-size : 12px;
        display : block;
@@ -106,6 +105,18 @@
       margin : 0 auto;
       width  : 100%;
       display : block;
+     }
+
+     .footer-wrapper {
+       margin-top: 10px;
+       margin-bottom : 10px;
+       height : 20px !important;
+       text-align: center;
+     }
+
+     .footer-row {
+       height : 20px !important;
+       margin : 10px auto;
      }
 
      .left-25 {
@@ -149,7 +160,7 @@
      }
 
     #main-wrapper {
-      /*min-height : 1000px;*/
+      min-height : 700px;
       background-image    : url('/assets/images/home-bg.jpg');
       background-size     : cover;
       background-repeat   : no-repeat;
