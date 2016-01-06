@@ -28,11 +28,11 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
     <link href="/assets/fonts/genericons/genericons.css" rel="stylesheet" type="text/css">
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
-    <link href="/css/lt1200px.css" media="(max-width: 1200px)" rel="stylesheet" type="text/css">
-    <link href="/css/lt800px.css" media="(max-width : 800px)" rel="stylesheet" type="text/css">
-    <link href="/css/lt700px.css" media="(max-width : 700px)" rel="stylesheet" type="text/css">
-    <link href="/css/lt600px.css" media="(max-width : 600px)" rel="stylesheet" type="text/css">
+    <link href="/css/main.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/lt1200px.min.css" media="(max-width: 1200px)" rel="stylesheet" type="text/css">
+    <link href="/css/lt800px.min.css" media="(max-width : 800px)" rel="stylesheet" type="text/css">
+    <link href="/css/lt700px.min.css" media="(max-width : 700px)" rel="stylesheet" type="text/css">
+    <link href="/css/lt600px.min.css" media="(max-width : 600px)" rel="stylesheet" type="text/css">
   </head>
   <body>
     <section id="top-menu">
@@ -47,8 +47,8 @@
     </section>
     <div id="main-wrapper">
       <div class="row">
-        <div class="panel left-25">
-          <ul class="sidebar">
+        <div id="sidebar" class="panel left-12">
+          <ul id="sidebar-menu">
             <li>
               <a href="#" target="_blank">
                 Home
@@ -86,18 +86,27 @@
             </li>
           </ul>
         </div>
-        <div id="content" class="panel right-75">
-          <h1 class="center">About Me</h1>
+        <div id="content" class="panel right-88">
+          <div id="content-inner">
+            <h1 class="center">Welcome!</h1>
+            <h2>Special Thanks</h2>
+            <p>
+              A big thank you to my  husband,  <a href="http://micah.tech" target="_blank">Micah</a>  for
+              his  love and support.  Without him, none of this would be possible.
+            </p>
+            <h2>Contact Me</h2>
+            <p>
+              Have a question or want  to get in touch with me? Feel free to send
+              me an <a href="mailto:keila.bolen@gmail.com">email</a>, or reach out though the social media links above.​
+            </p>
+          </div>
           </div>
           </div>
           <div class="row footer-row">
-            <div class="panel footer-wrapper">
-              <footer>
-                &copy; 2016 Keila Marie Bolen
-              </footer>
-            </div>
+            <footer id="footer" class="panel center-100">
+                <p class="center">&copy; 2016 Keila Marie Bolen</p>
+            </footer>
           </div>
-
       </div>
   </body>
 </html>

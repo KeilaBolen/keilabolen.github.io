@@ -1,0 +1,240 @@
+/* Mixins */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  margin : 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+$bg : rgba(166,166,166,1);
+$primary : rgba(140,140,140,1);
+$secondary : rgba(170,170,170,1);
+$hover : rgba(255,255,255,1);
+$gutter : 20px;
+$fs : 18px;
+
+html {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color : $primary;
+  background-color: $bg;
+  padding : 0;
+  margin : 0;
+  height : 100%;
+}
+
+body {
+  padding : 0;
+  margin : 0;
+  height : 100%;
+}
+
+footer {
+  color: $primary;
+}
+
+h1, h2, h3, h4 {
+  font-family : "Caveat", cursive;
+  color: $secondary;
+}
+
+h1 {
+  font-size : 3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+}
+
+p {
+  font-size : $fs;
+  color: $primary;
+}
+
+a, a:hover, a:visited, a:active {
+  font-size : $fs;
+  color: $primary;
+}
+
+a:hover {
+  color : $hover;
+}
+
+.wordpress-icon:before {
+	content: '\f205';
+	font: normal 18px/1 'Genericons';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.twitter-icon:before {
+	content: '\f202';
+	font: normal 18px/1 'Genericons';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.google-plus-icon:before {
+	content: '\f206';
+	font: normal 18px/1 'Genericons';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.linkedin-icon:before {
+	content: '\f208';
+	font: normal 18px/1 'Genericons';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.envelope-icon:before {
+	content: '\f410';
+	font: normal 18px/1 'Genericons';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.row {
+  height       : 100%;
+  position     : relative;
+  display      : block;
+  clear        : both;
+  width        : calc(100% - (#{$gutter} * 2));
+  padding      : 0 $gutter 0 $gutter;
+  margin       : 0;
+}
+
+.footer-row {
+  height : 80px;
+}
+
+.panel {
+   overflow : hidden;
+   font-size : 12px;
+   display : block;
+   background : rgba(0,0,0,.77);
+   padding : 0;
+ }
+
+ .center-100 {
+  width  : 100%;
+  display : block;
+ }
+
+ #footer {
+   display : block;
+   margin : $gutter 0 $gutter 0;
+   height : 80px !important;
+ }
+
+ #footer p {
+   @include vertical-align();
+ }
+
+ .left-12 {
+  overflow     : hidden;
+  display      : inline-block;
+  width        : 12%;
+  margin       : 0 $gutter 0 0;
+  float        : left;
+ }
+
+ .right-88 {
+  overflow   : hidden;
+  display    : inline-block;
+  width      : 88% - #{$gutter};
+  margin     : 0;
+ }
+
+ .center-100 {
+   width : 100%;
+   margin : 0;
+ }
+
+ .center {
+   text-align: center;
+ }
+
+ #sidebar-menu {
+   list-style-type : none;
+   margin-top : $gutter;
+   margin-left : 0;
+   padding-left: 0;
+ }
+
+ #sidebar-menu li {
+   text-align: center;
+   margin : 0 0 10px 0;
+   padding : 0 0 10px 0;
+ }
+
+ #sidebar-menu li a {
+   text-decoration: none;
+   font-size : $fs;
+ }
+
+#main-wrapper {
+  height : 640px;
+  padding : $gutter 0 $gutter 0;
+  background-image    : url('/assets/images/home-bg.jpg');
+  background-size     : cover;
+  background-repeat   : no-repeat;
+}
+
+#content {
+  position: relative;
+  display : block;
+  height  : 100%;
+  margin  : 0 auto;
+  padding-left : 5%;
+}
+
+#content-inner {
+  position: relative;
+  width : 90%;
+}
+
+#sidebar {
+  display : block;
+  height  : 100%;
+}
+
+#top-menu {
+  background-color : rgba(13,13,13,1);
+  height : 100px;
+  position : relative;
+  display : block;
+}
+
+#branding-image {
+  margin : 10px 0 0 10px;
+  height : 80px;
+  position: absolute;
+  z-index : 0;
+  float: left;
+}
+
+#social {
+  width: 100%;
+  text-align: right;
+  margin-left : -50px;
+  margin-top: 10px;
+  list-style-type: none;
+  position: absolute;
+  z-index: 1;
+}
+
+#social li {
+  display : inline-block;
+}
+
+#social li img {
+  width : 18px;
+}
