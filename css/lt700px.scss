@@ -13,7 +13,7 @@ $bg : rgba(166,166,166,1);
 $primary : rgba(140,140,140,1);
 $secondary : rgba(170,170,170,1);
 $hover : rgba(255,255,255,1);
-$gutter : 20px;
+$gutter : 10px;
 $fs : 12px;
 
 html {
@@ -142,7 +142,7 @@ a:hover {
  .left-12 {
   overflow     : hidden;
   display      : inline-block;
-  width        : 12%;
+  width        : 16%;
   margin       : 0 $gutter 0 0;
   float        : left;
  }
@@ -150,7 +150,7 @@ a:hover {
  .right-88 {
   overflow   : hidden;
   display    : inline-block;
-  width      : 88% - #{$gutter};
+  width      : 84% - #{$gutter};
   margin     : 0;
  }
 
@@ -215,13 +215,13 @@ a:hover {
 }
 
 #social {
-  width: 100%;
-  text-align: right;
-  margin-left : -50px;
-  margin-top: 10px;
-  list-style-type: none;
-  position: absolute;
-  z-index: 1;
+  width           : 100%;
+  text-align      : right;
+  margin-left     : -50px;
+  margin-top      : 10px;
+  list-style-type : none;
+  position        : absolute;
+  z-index         : 1;
 }
 
 #social li {
