@@ -2,6 +2,9 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
+    <!-- Set the base href -->
+    <script>document.write('<base href="' + document.location + '" />');</script>
+
     <title>Keila.me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png?v=WGGdM6okLy">
@@ -33,101 +36,28 @@
     <link href="/css/lt800px.min.css" media="(max-width : 800px)" rel="stylesheet" type="text/css">
     <link href="/css/lt700px.min.css" media="(max-width : 700px)" rel="stylesheet" type="text/css">
     <link href="/css/lt600px.min.css" media="(max-width : 600px)" rel="stylesheet" type="text/css">
+
+    <!-- Angular 2.0 beta -->
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2-polyfills.js"></script>
+    <script src="https://code.angularjs.org/tools/system.js"></script>
+    <script src="https://code.angularjs.org/tools/typescript.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/Rx.js"></script>
+    <script src="https://code.angularjs.org/2.0.0-beta.0/angular2.dev.js"></script>
+
+    <!-- Add the router library -->
+    <script src="https://code.angularjs.org/2.0.0-beta.0/router.dev.js"></script>
+
+    <script>
+      System.config({
+        transpiler: 'typescript',
+        typescriptOptions: { emitDecoratorMetadata: true },
+        packages: {'app': {defaultExtension: 'ts'}}
+      });
+      System.import('/app/boot.ts')
+            .then(null, console.error.bind(console));
+    </script>
   </head>
   <body>
-    <section id="top-menu">
-      <ul id="social">
-        <li><a href="https://artofnaturephotography.wordpress.com" target="_blank"><span class="genericon wordpress-icon"></span></a></li>
-        <li><a href="https://twitter.com/KeilaBolen" target="_blank"><span class="genericon twitter-icon"></span></a></li>
-        <li><a href="https://plus.google.com/116279744737557547843" target="_blank"><span class="genericon google-plus-icon"></span></a></li>
-        <li><a href="https://www.linkedin.com/in/keila-bolen-3142a3100" target="_blank"><span class="genericon linkedin-icon"></span></a></li>
-        <li><a href="mailto:keila.bolen@gmail.com"><span class="genericon envelope-icon"></span></a></li>
-      </ul>
-      <img id="branding-image" src="/branding-image.svg" />
-    </section>
-    <div id="main-wrapper">
-      <div class="row">
-        <div id="sidebar" class="panel left-12">
-          <ul id="sidebar-menu">
-            <li>
-              <a href="#" target="_blank">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-              About Me
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-              Resume
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-            Portfolio
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-            Photography
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-              Artwork
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank">
-              Writing
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="content" class="panel right-88">
-          <div id="content-inner">
-            <link href="/css/content.min.css" rel="stylesheet" type="text/css">
-            <h1 id="content-section-header" class="center">Portfolio</h1>
-            <div class="content-wrapper">
-              <div id="first" class="content-container">
-                <img class="content-image" src="/assets/images/screenshots/micah.tech-min.png" />
-                <div class="content-info">
-                  <h2 class="content-title">Micah.tech</h2>
-                  <p>Technology Blog</p>
-                  <p><a target="_blank" href="http://micah.tech">Visit Site</a></p>
-                </div>
-              </div>
-              <div class="clear"></div>
-              <div id="second" class="content-container">
-                <img class="content-image" src="/assets/images/screenshots/humorouslysad.com-min.png" />
-                <div class="content-info">
-                  <h2 class="content-title">Humorously Sad</h2>
-                  <p>Funny Memes</p>
-                  <p><a target="_blank" href="http://humorouslysad.com">Visit Site</a></p>
-                </div>
-              </div>
-              <div class="clear"></div>
-              <div id="third" class="content-container">
-                <img class="content-image" src="/assets/images/screenshots/keila.me-min.png" />
-                <div class="content-info">
-                  <h2 class="content-title">Keila.me</h2>
-                  <p>My Personal Website</p>
-                  <p><a href="#">Visit Site</a></p>
-                </div>
-              </div>
-              <div class="clear"></div>
-            </div>
-
-          </div>
-          </div>
-          </div>
-          <div class="row footer-row">
-            <footer id="footer" class="panel center-100">
-                <p class="center">&copy; 2016 Keila Marie Bolen</p>
-            </footer>
-          </div>
-      </div>
+    <my-app>loading...</my-app>
   </body>
 </html>

@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "isolatedModules": false,
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**"
+    ],
+    "compileOnSave": true,
+    "buildOnSave": false,
+    "files": [
+        "about-me/about-me.component.ts",
+        "app.component.ts",
+        "artwork/artwork.component.ts",
+        "boot.ts",
+        "home/home.component.ts",
+        "photography/photography.component.ts",
+        "portfolio/portfolio.component.ts",
+        "resume/resume.component.ts",
+        "writing/writing.component.ts"
+    ],
+    "atom": {
+        "rewriteTsconfig": true
+    }
+}
