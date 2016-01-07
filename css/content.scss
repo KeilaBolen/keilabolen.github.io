@@ -2,12 +2,12 @@
   height : 600px;
 }
 
-#artwork-section-header {
+#content-section-header {
   font-size : 2rem;
   margin   : 5px;
 }
 
-.artwork-wrapper {
+.content-wrapper {
   padding : 10px;
   width : 75%;
   margin : 0 auto;
@@ -20,76 +20,76 @@
     width : 100%;
     height : 20px;
   }
-  .artwork-container {
+  .content-container {
     width : 100%;
     display : inline-block;
     margin : 10px auto;
-    .artwork-image {
+    .content-image {
       width : 50%;
     }
-    .artwork-info {
+    .content-info {
       width : calc(30% - 15px);
       margin-top : 10px;
       text-align: left;
       margin-right : 25px;
-      .artwork-title {
+      .content-title {
         margin-bottom : 2px;
       }
-      p {
+      p, a {
         margin : 0;
       }
     }
   }
 }
 
-#second .artwork-info {
+#second .content-info {
   text-align: right;
 }
 
 @media (max-width: 600px) {
   #first {
-    .artwork-image {
+    .content-image {
       float : left;
       margin-right : 20px;
     }
-    .artwork-info {
+    .content-info {
       float : right;
-      .artwork-title {
+      .content-title {
         font-size : 11px;
       }
-      p {
+      p, a {
         font-size : 8px;
       }
     }
   }
 
   #second {
-    .artwork-image {
+    .content-image {
       float : right;
     }
-    .artwork-info {
+    .content-info {
       float : left;
       margin-left : 20px;
-      .artwork-title {
+      .content-title {
         font-size : 9px;
       }
-      p {
+      p, a {
         font-size : 6px;
       }
     }
   }
 
   #third {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 22px;
-      .artwork-title {
+      .content-title {
         font-size : 11px;
       }
-      p {
+      p, a {
         font-size : 8px;
       }
     }
@@ -98,48 +98,48 @@
 
 @media (min-width: 601px) {
   #first {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 34px;
-      .artwork-title {
+      .content-title {
         font-size : 19px;
       }
-      p {
+      p, a {
         font-size : 13px;
       }
     }
   }
 
   #second {
-    .artwork-image {
+    .content-image {
       float : right;
     }
-    .artwork-info {
+    .content-info {
       float : left;
       margin-left : 34px;
-      .artwork-title {
+      .content-title {
         font-size : 19px;
       }
-      p {
+      p, a {
         font-size : 13px;
       }
     }
   }
 
   #third {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 34px;
-      .artwork-title {
+      .content-title {
         font-size : 19px;
       }
-      p {
+      p, a {
         font-size : 13px;
       }
     }
@@ -148,48 +148,48 @@
 
 @media (min-width: 800px) {
   #first {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 34px;
-      .artwork-title {
+      .content-title {
         font-size : 20px;
       }
-      p {
+      p, a {
         font-size : 14px;
       }
     }
   }
 
   #second {
-    .artwork-image {
+    .content-image {
       float : right;
     }
-    .artwork-info {
+    .content-info {
       float : left;
       margin-left : 34px;
-      .artwork-title {
+      .content-title {
         font-size : 16px;
       }
-      p {
+      p, a {
         font-size : 11px;
       }
     }
   }
 
   #third {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 34px;
-      .artwork-title {
+      .content-title {
         font-size : 20px;
       }
-      p {
+      p, a {
         font-size : 14px;
       }
     }
@@ -198,48 +198,48 @@
 
 @media (min-width: 900px) {
   #first {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 44px;
-      .artwork-title {
+      .content-title {
         font-size : 21px;
       }
-      p {
+      p, a {
         font-size : 16px;
       }
     }
   }
 
   #second {
-    .artwork-image {
+    .content-image {
       float : right;
     }
-    .artwork-info {
+    .content-info {
       float : left;
       margin-left : 44px;
-      .artwork-title {
+      .content-title {
         font-size : 17px;
       }
-      p {
+      p, a {
         font-size : 13px;
       }
     }
   }
 
   #third {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 44px;
-      .artwork-title {
+      .content-title {
         font-size : 21px;
       }
-      p {
+      p, a {
         font-size : 15px;
       }
     }
@@ -248,48 +248,48 @@
 
 @media (min-width: 1000px) {
   #first {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       margin-right : 44px;
       float : right;
-      .artwork-title {
+      .content-title {
         font-size : 22px;
       }
-      p {
+      p, a {
         font-size : 16px;
       }
     }
   }
 
   #second {
-    .artwork-image {
+    .content-image {
       float : right;
     }
-    .artwork-info {
+    .content-info {
       float : left;
       margin-left : 44px;
-      .artwork-title {
+      .content-title {
         font-size : 18px;
       }
-      p {
+      p, a {
         font-size : 14px;
       }
     }
   }
 
   #third {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 44px;
-      .artwork-title {
+      .content-title {
         font-size : 22px;
       }
-      p {
+      p, a {
         font-size : 16px;
       }
     }
@@ -298,48 +298,48 @@
 
 @media (min-width: 1100px) {
   #first {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       margin-right : 84px;
       float : right;
-      .artwork-title {
+      .content-title {
         font-size : 23px;
       }
-      p {
+      p, a {
         font-size : 17px;
       }
     }
   }
 
   #second {
-    .artwork-image {
+    .content-image {
       float : right;
     }
-    .artwork-info {
+    .content-info {
       float : left;
       margin-left : 84px;
-      .artwork-title {
+      .content-title {
         font-size : 23px;
       }
-      p {
+      p, a {
         font-size : 17px;
       }
     }
   }
 
   #third {
-    .artwork-image {
+    .content-image {
       float : left;
     }
-    .artwork-info {
+    .content-info {
       float : right;
       margin-right : 84px;
-      .artwork-title {
+      .content-title {
         font-size : 23px;
       }
-      p {
+      p, a {
         font-size : 17px;
       }
     }
