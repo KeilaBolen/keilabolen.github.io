@@ -162,6 +162,16 @@ a:hover {
    text-align: center;
  }
 
+ .iframe-wrapper {
+   margin : 0 auto;
+   background:url(/assets/images/loading.gif) center center no-repeat;
+ }
+
+ .iframe-wrapper iframe {
+   width : 100%;
+   height : 500px;
+ }
+
  #sidebar-menu {
    list-style-type : none;
    margin-top : $gutter;
