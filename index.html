@@ -228,6 +228,10 @@ body {
   }
 }
 
+#enter-btn {
+
+}
+
 </style>
 
   </head>
@@ -254,7 +258,7 @@ body {
             <h1 class="cover-heading">Keila.me</h1>
             <p class="lead tagline">The personal website of Keila Marie Bolen</p>
             <p class="lead">
-              <a href="/home.html" class="btn btn-lg btn-secondary">Enter</a>
+              <a id="enter-btn" href="/home.html" class="btn btn-lg btn-secondary">Enter</a>
             </p>
           </div>
 
@@ -308,7 +312,12 @@ DATA_TOGGLE:'[data-toggle="tab"], [data-toggle="pill"]',DROPDOWN_TOGGLE:".dropdo
 
   jQuery(".tagline").fitText(3.3);
   jQuery(".cover-heading").fitText(.4);
-
+  jQuery('#enter-btn').click(function(e) {
+    e.preventDefault();
+    console.info('enter button click event handler');
+    window.location.assign('/home.html');
+    // window.location.reload(true);
+  });
 })();
 </script>
   </body>
